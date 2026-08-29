@@ -1,8 +1,11 @@
 # Desarrollo_Sistemas_Empresariales
 
-Integrantes:
+> Talleres académicos y Documentacion
 
-Jeisson osorio llanos
-bryan Steven salinas Maecha
-Diego felipe Garcia Giraldo
-Duvan Gomez
+---
+
+## 👥 Integrantes del Equipo
+* **Jeisson Osorio Llanos**
+* **Bryan Steven Salinas Maecha**
+* **Diego Felipe García Giraldo**
+* **Duvan Gómez**
