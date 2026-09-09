@@ -9,3 +9,8 @@
 * **Bryan Steven Salinas Maecha**
 * **Diego Felipe García Giraldo**
 * **Duvan Gómez**
+
+## GitHub
+* **https://github.com/Jei22Universidad/Desarrollo_Sistemas_Empresariales
+## Drive
+* **https://drive.google.com/drive/folders/1kdMJ4njnMVWI4fvo1aOFqdjWVKhfYEOV?usp=drive_link
