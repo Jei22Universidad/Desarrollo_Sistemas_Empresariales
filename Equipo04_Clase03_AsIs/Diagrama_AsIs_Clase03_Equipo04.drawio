@@ -1,0 +1,257 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="AS-IS Almacafé" id="AS-IS ">
+    <mxGraphModel dx="2666" dy="1479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="laneM" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;" value="Mantenimiento" vertex="1">
+          <mxGeometry height="190" width="2840" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="laneG" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;" value="Gerencia" vertex="1">
+          <mxGeometry height="90" width="2840" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="laneC" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;" value="Compras" vertex="1">
+          <mxGeometry height="170" width="2840" x="40" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="laneP" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;" value="Proveedor" vertex="1">
+          <mxGeometry height="120" width="2840" x="40" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="laneA" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=8;fontStyle=1;fontSize=13;" value="Almacén" vertex="1">
+          <mxGeometry height="240" width="2840" x="40" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="st1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=8;" value="Necesidad de intervención sobre equipo (preventivo/correctivo)" vertex="1">
+          <mxGeometry height="65" width="100" x="50" y="107.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Identificar repuesto requerido (10-15 min)" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=8;" value="¿Repuesto identificado con precisión?" vertex="1">
+          <mxGeometry height="76" width="110" x="375" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="a3b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontSize=9;" value="Consultar información adicional del equipo, incl. especificaciones técnicas (+15-30 min)" vertex="1">
+          <mxGeometry height="44" width="250" x="305" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Solicitar repuesto a almacén — verbal (5 min)" vertex="1">
+          <mxGeometry height="50" width="200" x="690" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="a5b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontSize=9;" value="Completar información de la solicitud (+1 hora)" vertex="1">
+          <mxGeometry height="42" width="230" x="405" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="mcot" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Solicitar cotización al proveedor por correo — Supervisor de Mantenimiento (60 min)" vertex="1">
+          <mxGeometry height="54" width="230" x="1335" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="mauth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Solicitar autorización a Gerencia — Supervisor de Mantenimiento (60 min)" vertex="1">
+          <mxGeometry height="54" width="230" x="1595" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="msap" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Generar solicitud de compra en SAP — Supervisor de Mantenimiento (30 min)" vertex="1">
+          <mxGeometry height="54" width="240" x="1900" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="gauth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Autorizar la compra con sello (30 min); siempre se autoriza, no hay rechazo. Si Gerencia no está: un compañero autorizado asume o se autoriza por correo" vertex="1">
+          <mxGeometry height="58" width="300" x="1560" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Recibir la solicitud por correo y contactar al proveedor habitual" vertex="1">
+          <mxGeometry height="54" width="230" x="1905" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="a11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Generar la orden de compra y hacerla llegar al proveedor (≈1 día)" vertex="1">
+          <mxGeometry height="54" width="200" x="2170" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="d10b" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=8;" value="¿Proveedor puede suministrar a tiempo?" vertex="1">
+          <mxGeometry height="76" width="110" x="2425" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="a11b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontSize=9;" value="Buscar proveedor alternativo" vertex="1">
+          <mxGeometry height="44" width="200" x="2170" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="a13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Confirmar y despachar pedido — llega en 3 a 4 días" vertex="1">
+          <mxGeometry height="54" width="240" x="2580" y="523" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=8;" value="¿Solicitud completa?" vertex="1">
+          <mxGeometry height="76" width="110" x="735" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Consultar existencias en la hoja de control física (15 min)" vertex="1">
+          <mxGeometry height="50" width="200" x="890" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="tbhist" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=8;dashed=1;" value="Consultar información histórica — registros manuales dispersos (30-60 min)" vertex="1">
+          <mxGeometry height="50" width="190" x="895" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="d7" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=8;" value="¿Cantidad suficiente?" vertex="1">
+          <mxGeometry height="76" width="110" x="1105" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontSize=9;" value="Identificar faltante y necesidad de compra (60 min)" vertex="1">
+          <mxGeometry height="48" width="230" x="1100" y="731" as="geometry" />
+        </mxCell>
+        <mxCell id="a12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Entregar repuesto al técnico (5 min)" vertex="1">
+          <mxGeometry height="50" width="190" x="1265" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="d15" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=8;" value="¿Cantidad entregada correcta?" vertex="1">
+          <mxGeometry height="76" width="110" x="1485" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="a15b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontSize=9;" value="Ajustar entrega o informar diferencia (+10 min)" vertex="1">
+          <mxGeometry height="46" width="220" x="1430" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="a16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Registrar salida de inventario (5 min) — se anota en el libro, pero no siempre" vertex="1">
+          <mxGeometry height="54" width="210" x="1625" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="a17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Actualizar niveles de stock (5 min) — el stock disponible no se actualiza" vertex="1">
+          <mxGeometry height="54" width="220" x="1865" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="d18" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=7;" value="¿Existencia por debajo del mínimo? (revisión manual)" vertex="1">
+          <mxGeometry height="76" width="110" x="2115" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="ef" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontSize=7;" value="Repuesto entregado / existencias actualizadas" vertex="1">
+          <mxGeometry height="70" width="70" x="2265" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="a14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=9;" value="Recibir repuesto y registrar entrada (20 min)" vertex="1">
+          <mxGeometry height="48" width="240" x="2580" y="731" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=left;verticalAlign=top;spacing=8;fontSize=10;" value="Leyenda:&lt;br&gt;Recuadro blanco = actividad  |  Rombo = decisión  |  Fondo gris = excepción / retrabajo&lt;br&gt;Línea punteada = retorno de un retrabajo o consulta transversal&lt;br&gt;&lt;br&gt;Los tiempos entre paréntesis son de trabajo; los que llevan + son adicionales por reproceso.&lt;br&gt;Detalle completo: Tabla de tiempos y evidencia (Actividad 5).&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="445" x="40" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="st1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a2" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="d3" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a3b" value="No">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="a2" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a4" value="Sí">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="d5" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="d5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="a5b" value="No">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="665" />
+              <mxPoint x="690" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="a5b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="d5" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="725" />
+              <mxPoint x="790" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="d5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a6" value="Sí">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="a6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;endArrow=none;" target="tbhist" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="a6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="d7" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="d7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a12" value="Sí">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="d7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.26;entryY=0;entryDx=0;entryDy=0;" target="a8" value="No">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="a8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.6;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mcot" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="1238" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="mcot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mauth" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="mauth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="gauth" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="gauth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="msap" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="1890" y="275" />
+              <mxPoint x="1890" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="msap" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="a9" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="a9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a11" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="a11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="d10b" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="d10b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="a11b" value="No">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="2480" y="448" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="a11b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="a11" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="d10b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a13" value="Sí">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="2560" y="375" />
+              <mxPoint x="2560" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="a13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="a14" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="a14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a12" value="Repuesto recibido">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="2700" y="815" />
+              <mxPoint x="1360" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="d15" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="d15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="a15b" value="No">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="a15b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="a12" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="1407.5" y="755" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="d15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a16" value="Sí">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="a16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="a17" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="a17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="d18" value="">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="d18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ef" value="No">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="d18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="a8" value="Sí (revisión manual, sin alerta automática)">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="2170" y="800" />
+              <mxPoint x="1215" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
