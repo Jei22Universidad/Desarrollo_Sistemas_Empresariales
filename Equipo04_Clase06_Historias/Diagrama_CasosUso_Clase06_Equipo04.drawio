@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net">
+<diagram name="Etapa 1" id="uc_e1">
+    <mxGraphModel dx="900" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1040" pageHeight="960" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="n101" value="Sistema propio de inventario y órdenes de trabajo — Etapa 1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1"><mxGeometry x="230" y="30" width="580" height="880" as="geometry"/></mxCell>
+        <mxCell id="n102" value="Diligenciar solicitud&amp;#10;digital de repuesto&amp;#10;&amp;#10;CU-01 · HU01" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="435.0" y="74.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n103" value="Consultar disponibilidad&amp;#10;de inventario&amp;#10;&amp;#10;CU-02 · HU02" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="325.0" y="314.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n104" value="Registrar entrega&amp;#10;de repuesto&amp;#10;&amp;#10;CU-02 · HU03" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="325.0" y="434.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n105" value="Identificar quién retira&amp;#10;el repuesto&amp;#10;&amp;#10;CU-02 · HU16" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="325.0" y="554.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n106" value="Registrar devolución&amp;#10;de repuesto&amp;#10;&amp;#10;CU-02 · HU15" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="325.0" y="674.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n107" value="Registrar entrada&amp;#10;de repuesto&amp;#10;&amp;#10;CU-02 · HU04" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="325.0" y="794.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n108" value="Gestionar alerta de&amp;#10;stock mínimo&amp;#10;&amp;#10;CU-03 · HU05" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="565.0" y="194.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n109" value="Definir nivel mínimo&amp;#10;de repuesto&amp;#10;&amp;#10;CU-03 · HU06" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="325.0" y="194.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n110" value="Generar listado de&amp;#10;cotización en PDF&amp;#10;&amp;#10;CU-04 · HU14" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="565.0" y="314.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n111" value="Trasladar solicitud&amp;#10;aprobada a SAP&amp;#10;&amp;#10;CU-05 · HU08" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="565.0" y="434.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n112" value="Aprobar cotización&amp;#10;de compra&amp;#10;&amp;#10;CU-04 · HU07" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="565.0" y="554.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n113" value="Técnico de Mantenimiento" style="shape=umlActor;whiteSpace=wrap;html=1;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="50" y="70" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="n114" value="Responsable de Almacén" style="shape=umlActor;whiteSpace=wrap;html=1;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="50" y="500" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="n115" value="Proveedor (externo)" style="shape=umlActor;whiteSpace=wrap;html=1;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="50" y="800" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="n116" value="Supervisor de Mantenimiento" style="shape=umlActor;whiteSpace=wrap;html=1;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="950" y="320" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="n117" value="Gerencia (o suplente designado)" style="shape=umlActor;whiteSpace=wrap;html=1;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="950" y="560" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="n118" style="endArrow=none;html=1;" edge="1" parent="1" source="n113" target="n102"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n119" style="endArrow=none;html=1;" edge="1" parent="1" source="n116" target="n102"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n120" style="endArrow=none;html=1;" edge="1" parent="1" source="n116" target="n108"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n121" style="endArrow=none;html=1;" edge="1" parent="1" source="n116" target="n110"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n122" style="endArrow=none;html=1;" edge="1" parent="1" source="n116" target="n111"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n123" style="endArrow=none;html=1;" edge="1" parent="1" source="n114" target="n103"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n124" style="endArrow=none;html=1;" edge="1" parent="1" source="n114" target="n104"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n125" style="endArrow=none;html=1;" edge="1" parent="1" source="n114" target="n107"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n126" style="endArrow=none;html=1;" edge="1" parent="1" source="n114" target="n109"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n127" style="endArrow=none;html=1;" edge="1" parent="1" source="n114" target="n106"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n128" style="endArrow=none;html=1;" edge="1" parent="1" source="n115" target="n107"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n129" style="endArrow=none;html=1;" edge="1" parent="1" source="n117" target="n112"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n130" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;dashed=1;html=1;fontSize=10;" edge="1" parent="1" source="n108" target="n109"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n131" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;dashed=1;html=1;fontSize=10;" edge="1" parent="1" source="n104" target="n105"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+<diagram name="Etapa 2" id="uc_e2">
+    <mxGraphModel dx="900" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="760" pageHeight="620" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="n101" value="Sistema propio — Etapa 2: mantenimiento preventivo por vida útil" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1"><mxGeometry x="200" y="40" width="500" height="540" as="geometry"/></mxCell>
+        <mxCell id="n102" value="Registrar vida útil&amp;#10;del repuesto&amp;#10;&amp;#10;CU-06 · HU09" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="365.0" y="74.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n103" value="Registrar horas&amp;#10;de uso&amp;#10;&amp;#10;CU-06 · HU10" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="365.0" y="174.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n104" value="Recibir alerta por&amp;#10;vida útil&amp;#10;&amp;#10;CU-06 · HU11" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="365.0" y="274.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n105" value="Generar orden de&amp;#10;servicio preventivo&amp;#10;&amp;#10;CU-06 · HU12" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="365.0" y="374.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n106" value="Consultar hoja de vida&amp;#10;del equipo&amp;#10;&amp;#10;CU-06 · HU13" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="365.0" y="474.0" width="170" height="72" as="geometry"/></mxCell>
+        <mxCell id="n107" value="Técnico de Mantenimiento" style="shape=umlActor;whiteSpace=wrap;html=1;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="50" y="170" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="n108" value="Supervisor de Mantenimiento" style="shape=umlActor;whiteSpace=wrap;html=1;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="50" y="370" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="n109" style="endArrow=none;html=1;" edge="1" parent="1" source="n108" target="n102"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n110" style="endArrow=none;html=1;" edge="1" parent="1" source="n107" target="n103"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n111" style="endArrow=none;html=1;" edge="1" parent="1" source="n108" target="n104"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n112" style="endArrow=none;html=1;" edge="1" parent="1" source="n108" target="n105"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n113" style="endArrow=none;html=1;" edge="1" parent="1" source="n108" target="n106"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

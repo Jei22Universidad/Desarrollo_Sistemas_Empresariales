@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Escenarios Gherkin — Requisitos Funcionales</title>
+<style>
+  :root{
+    --navy:#000000; --blue:#000000; --blue-light:#ffffff;
+    --gray-border:#000000; --gray-text:#222222; --bg:#ffffff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--navy);
+    font-family:Arial, Helvetica, "Liberation Sans", sans-serif;
+    padding:48px 56px 64px;
+  }
+  .eyebrow{
+    font-size:11px; letter-spacing:1.5px; color:var(--blue);
+    font-weight:700; text-transform:uppercase; margin-bottom:6px;
+  }
+  .breadcrumb{
+    font-size:11px; letter-spacing:1px; color:var(--gray-text);
+    text-transform:uppercase; margin-bottom:28px;
+  }
+  h1{
+    font-size:30px; line-height:1.25; margin:0 0 10px; font-weight:800;
+  }
+  h1 .accent{ color:var(--blue); }
+  .subtitle{ font-size:14px; color:var(--gray-text); margin-bottom:36px; }
+  .grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;
+  }
+  .card{
+    border:1px solid var(--gray-border); border-radius:14px;
+    padding:20px 22px 18px; box-shadow:0 2px 10px rgba(27,37,89,0.04);
+    display:flex; flex-direction:column; min-height:300px;
+  }
+  .card-head{
+    display:flex; align-items:flex-start; justify-content:space-between;
+    gap:10px; margin-bottom:14px;
+  }
+  .card-head h2{ font-size:16.5px; margin:0; font-weight:800; line-height:1.3; }
+  .badge{
+    font-size:10px; font-weight:700; letter-spacing:0.5px;
+    border-radius:999px; padding:4px 11px; white-space:nowrap;
+    border:1.4px solid var(--blue); color:var(--blue); background:var(--blue-light);
+  }
+  .badge.should{ border-color:#000000; color:#000000; background:#ffffff; }
+  .badge.could{ border-color:#444444; color:#222222; background:#ffffff; }
+  .steps{ font-size:12.8px; line-height:1.5; }
+  .step{ display:flex; gap:10px; margin-bottom:9px; }
+  .step .tag{
+    flex:0 0 68px; font-weight:800; font-size:10.5px; color:var(--navy);
+    letter-spacing:0.5px; padding-top:1px;
+  }
+  .step .txt{ color:#000000; }
+  .divider{ border:none; border-top:1px solid var(--gray-border); margin:12px 0 10px; }
+  .evidencia{ font-size:11.3px; color:var(--gray-text); line-height:1.45; }
+  .evidencia b{ color:var(--navy); }
+  .fuente{ font-size:10.5px; color:#444444; margin-top:6px; }
+  footer{ margin-top:40px; font-size:11px; color:#444444; }
+</style>
+</head>
+<body>
+
+  <div class="breadcrumb">Almacafé S.A. · Equipo 04 · Clase 05 — Requisitos</div>
+  <div class="eyebrow">Escenarios Gherkin</div>
+  <h1>Cada requisito funcional, leído como un<br><span class="accent">escenario ejecutable.</span></h1>
+  <div class="subtitle">Los 20 requisitos funcionales (RF01 a RF20) de la Tabla 2, en formato Dado / Cuando / Entonces, con su prioridad MoSCoW y la evidencia que confirmaría su cumplimiento.</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-head"><h2>RF01 · Solicitud digital de repuesto</h2><span class="badge">MUST</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">el usuario está autenticado como Técnico o Supervisor de Mantenimiento</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">selecciona un equipo y un repuesto del catálogo e indica la cantidad</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema crea la solicitud</div></div>
+        <div class="step"><div class="tag">Y</div><div class="txt">la deja visible para Almacén</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> solicitud registrada y visible en el módulo de Almacén.</div>
+      <div class="fuente">Cambio 3 · Hallazgo 3</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF02 · Bloqueo de solicitud incompleta</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">el usuario está diligenciando una solicitud</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">intenta enviarla sin repuesto, cantidad o especificación obligatoria</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema impide el envío</div></div>
+        <div class="step"><div class="tag">Y</div><div class="txt">señala el campo faltante</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> registro del intento de envío bloqueado y del campo faltante.</div>
+      <div class="fuente">Cambio 3 · Hallazgo 3</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF03 · Disponibilidad y ubicación en tiempo real</h2><span class="badge">MUST</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">existe una solicitud de repuesto pendiente</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Responsable de Almacén la abre</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema muestra la cantidad disponible actualizada y la ubicación de ese repuesto</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> marca de tiempo de la consulta, cantidad y ubicación mostradas.</div>
+      <div class="fuente">Cambio 1 · Hallazgo 1</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF04 · Salida de inventario automática</h2><span class="badge">MUST</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">el Responsable de Almacén confirma la entrega de un repuesto</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">registra la cantidad entregada</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema descuenta esa cantidad del inventario</div></div>
+        <div class="step"><div class="tag">Y</div><div class="txt">guarda fecha, repuesto y responsable</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> movimiento de salida con fecha, repuesto, cantidad y responsable.</div>
+      <div class="fuente">Cambio 1 · Hallazgo 1 (resuelve "no hay registro")</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF05 · Entrada de inventario automática</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">llegó un repuesto del proveedor</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Responsable de Almacén registra la recepción con cantidad y documento de soporte</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema suma la cantidad al inventario</div></div>
+        <div class="step"><div class="tag">Y</div><div class="txt">asocia el documento de soporte</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> movimiento de entrada con documento de soporte adjunto.</div>
+      <div class="fuente">Cambio 1 · Hallazgo 1</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF06 · Alerta de stock mínimo</h2><span class="badge">MUST</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">un repuesto tiene un nivel mínimo definido</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">su existencia queda por debajo de ese nivel tras una salida</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema genera una alerta visible para el Supervisor de Mantenimiento y el Responsable de Almacén</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> registro de la alerta con repuesto, fecha y nivel al momento del disparo.</div>
+      <div class="fuente">Cambio 2 · Hallazgo 2</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF07 · Compra sugerida desde la alerta</h2><span class="badge could">COULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">se generó una alerta de stock bajo para un repuesto</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Supervisor de Mantenimiento la abre</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema presenta una solicitud de compra prellenada con el repuesto y una cantidad sugerida</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> borrador de solicitud de compra vinculado a la alerta.</div>
+      <div class="fuente">Cambio 2 · Hallazgo 2</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF08 · Nivel mínimo editable</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">el Responsable de Almacén está autenticado</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">define o modifica el nivel mínimo de un repuesto</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema guarda el nuevo valor</div></div>
+        <div class="step"><div class="tag">Y</div><div class="txt">lo usa para futuras alertas</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> historial de cambios del nivel mínimo por repuesto.</div>
+      <div class="fuente">Cambio 2 · Hallazgo 2</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF09 · Aprobación digital de Gerencia</h2><span class="badge">MUST</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">existe una cotización pendiente de aprobación</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">Gerencia o el suplente designado la aprueba desde el sistema</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema registra la aprobación con fecha, hora y usuario</div></div>
+        <div class="step"><div class="tag">Y</div><div class="txt">habilita generar la solicitud en SAP</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> registro de aprobación con usuario, fecha y hora.</div>
+      <div class="fuente">Cambio 4 · trámite interno de compra</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF10 · Aviso de cotización pendiente</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">se generó una cotización que requiere aprobación</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el sistema la registra como pendiente</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">envía un correo a Gerencia o al suplente designado con la cotización adjunta</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> correo enviado con la cotización adjunta y marca de tiempo.</div>
+      <div class="fuente">Cambio 4 · trámite interno de compra</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF11 · Suplente de aprobación</h2><span class="badge could">COULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">Gerencia está autenticada</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">designa un suplente y define un límite de monto</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema permite que ese suplente apruebe cotizaciones hasta ese límite</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> registro de la designación con suplente, límite y fecha.</div>
+      <div class="fuente">Cambio 4 · mecanismo de contingencia confirmado</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF12 · Datos listos para SAP</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">una cotización fue aprobada</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Supervisor de Mantenimiento abre la solicitud aprobada</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema muestra los datos consolidados (repuesto, cantidad, proveedor, cotización) listos para copiar a SAP</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> vista de datos consolidados y marca de tiempo de generación.</div>
+      <div class="fuente">Cambios 1 y 4 · riesgo de "doble digitación" (Matriz VFRR)</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF13 · Vida útil por repuesto</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">el Supervisor está autenticado y existe un repuesto en el catálogo</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">registra su vida útil en horas</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema la guarda asociada al repuesto y la muestra en su ficha</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> ficha del repuesto con la vida útil guardada.</div>
+      <div class="fuente">Cambio 5 (etapa 2)</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF14 · Horas de uso del equipo</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">hay un equipo con un repuesto instalado</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Técnico registra las horas de uso</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema acumula las horas y muestra el porcentaje de vida útil consumido</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> horas acumuladas y porcentaje de vida útil consumido.</div>
+      <div class="fuente">Cambio 5 (etapa 2)</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF15 · Alerta por vida útil</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">un repuesto tiene vida útil y horas registradas</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">la vida restante llega al umbral de aviso definido por Mantenimiento</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema genera la alerta e indica las existencias del repuesto</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> alerta generada con fecha y existencias del repuesto.</div>
+      <div class="fuente">Cambio 5 (etapa 2)</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF16 · Orden de servicio preventivo</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">existe una alerta de vida útil</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Supervisor la confirma</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema genera la orden de servicio con equipo, repuesto y fecha, y lista el repuesto a cotizar si no hay existencias</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> orden de servicio generada y repuesto en el listado a cotizar.</div>
+      <div class="fuente">Cambio 5 (etapa 2)</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF17 · Hoja de vida del equipo</h2><span class="badge could">COULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">un equipo tiene repuestos instalados y órdenes de servicio</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">se consulta su hoja de vida</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema muestra el historial ordenado por fecha</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> hoja de vida con historial ordenado por fecha.</div>
+      <div class="fuente">Cambio 5 (etapa 2)</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF18 · Listado de cotización en PDF</h2><span class="badge should">SHOULD</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">hay elementos seleccionados para cotizar</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Supervisor solicita el listado</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema genera un PDF listo para enviar al proveedor</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> archivo PDF generado con marca de tiempo.</div>
+      <div class="fuente">Cambios 2 y 4</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF19 · Registro de devolución</h2><span class="badge">MUST</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">un técnico devuelve un repuesto no utilizado</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Responsable de Almacén registra la devolución con repuesto, cantidad y persona</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema suma la cantidad al inventario y guarda fecha y persona que devolvió</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> movimiento de devolución con fecha, repuesto, cantidad y persona.</div>
+      <div class="fuente">Cambio 1</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>RF20 · Persona y destino en cada salida</h2><span class="badge">MUST</span></div>
+      <div class="steps">
+        <div class="step"><div class="tag">DADO</div><div class="txt">se entrega un repuesto</div></div>
+        <div class="step"><div class="tag">CUANDO</div><div class="txt">el Responsable de Almacén registra la salida sin indicar quién retira o el destino</div></div>
+        <div class="step"><div class="tag">ENTONCES</div><div class="txt">el sistema no permite guardarla; al indicarlos, la salida queda consultable por persona y por equipo</div></div>
+      </div>
+      <hr class="divider">
+      <div class="evidencia"><b>Evidencia:</b> salida bloqueada sin persona o destino, y salida consultable por persona y equipo.</div>
+      <div class="fuente">Cambio 1</div>
+    </div>
+
+  </div>
+
+  <footer>Equipo 04 — Almacafé S.A. · Proyecto integrador, Clase 05. Los requisitos no funcionales (RNF01–RNF06) no se presentan como escenario Gherkin porque no siguen la estructura Dado/Cuando/Entonces; se mantienen en la Tabla 3 del documento de requisitos, con su criterio y método de medición.</footer>
+
+</body>
+</html>
